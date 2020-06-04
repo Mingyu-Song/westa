@@ -56,7 +56,7 @@ window.onload=function(){
 
     function pass(){
         if(loginAllow() === "allow"){
-            window.location.href = "main.html";
+            window.location.href = "../main.html";
         }
     }
     loginBtn.addEventListener('click', pass);
