@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Instagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- nav -->
+    <nav class="nav-container">
+      <div class="nav-box">
+        <div class="nav-logo"></div>
+        <div class="nav-search">
+          <input type="text" id="searching">
+          <div class="searching-inside">
+            <div class="search-img"></div>
+            <label for="searching" class="search-label">검색</label>
+          </div>
+        </div>
+        <ul class="nav-icons">
+          <li class="navicon">
+            <svg width="22" height="22" viewbox="0 0 48 48">
+              <path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path>
+            </svg>
+          </li>
+          <li class="navicon">
+            <svg width="22" height="22" viewbox="0 0 48 48">
+              <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+            </svg>
+          </li>
+          <li class="navicon">
+            <svg width="22" height="22" viewbox="0 0 48 48">
+              <path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path>
+            </svg>
+          </li>
+          <li class="navicon">
+            <svg width="22" height="22" viewbox="0 0 48 48">
+              <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+            </svg>
+          </li>
+          <li class="navicon">
+            <img src="https://ca.slack-edge.com/TH0U6FBTN-U011AUS6L9F-b3b4decf18f3-512">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="more-page" id="more-page">
+      <div class="more-page-bg">
+        <ul class="more-page-ul">
+          <li class="more-page-li"><span>부적절한 콘텐츠 신고</span></li>
+          <li class="more-page-li"><span>팔로우 취소</span></li>
+          <li class="more-page-li"><span>게시물로 이동</span></li>
+          <li class="more-page-li"><span>공유하기</span></li>
+          <li class="more-page-li"><span>링크 복사</span></li>
+          <li class="more-page-li"><span>퍼가기</span></li>
+          <li class="more-page-li"><a href="#"><span>취소</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <main class="main-container">
+      <div class="main-box">
+        <div class="feeds">
+          <div class="storys-container">
+            <div class="left-right-container">
+              <button class="to-left">
+                <div class="to-left-img"></div>
+              </button>
+              <button class="to-right">
+                <div class="to-right-img"></div>
+              </button>
+            </div>
+            <ul class="storys">
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규1</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규2</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규3</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규4</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규5</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규6</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규7</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규8</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규9</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규10</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규11</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규12</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규13</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규14</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규15</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규16</div>
+              </li>
+              <li class="story">
+                <div class="story-image">
+                  <div class="story-image-cover">
+                    <img src="img/profile.png" width="53px" height="53px" alt="사진">
+                  </div>
+                </div>
+                <div class="story-name">송민규END</div>
+              </li>
+            </ul>
+          </div>
+          <article>
+            <div class="post">
+              <div class="post-who">
+                <div class="post-who-img"></div>
+                <span class="post-who-name">S.O.N.G.M.G</span>
+                <a href="#more-page" class="post-who-more">
+                  <svg class="post-who-more-img " fill="#262626" height="16" viewBox="0 0 48 48" width="16">
+                    <circle cx="8" cy="24" r="4.5"></circle>
+                    <circle cx="24" cy="24" r="4.5"></circle>
+                    <circle cx="40" cy="24" r="4.5"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="post-photo">
+              <img src="img/profile.png" width="614px" height="614px">
+            </div>
+            <div class="post-about">
+              <div class="post-do">
+                <div class="post-doLeft">
+                  <div class="post-do-like"></div>
+                  <div class="post-do-commend"></div>
+                  <div class="post-do-share"></div>
+                </div>
+                <div class="post-do-bookmark"></div>
+              </div>
+              <div class="post-who-like">
+                <a href="#">dooreplay</a>님 <a href="#">여러 명</a>이 좋아합니다
+              </div>
+              <div class="post-description">
+                <a class="post-description-name">S.O.N.G.M.G </a><span>프론트엔드 장인이 됩시다. 프론트만세~~~</span>
+              </div>
+              <div class="commend"></div>
+              <div class="post-time">2시간 전</div>
+              <div class="commend-container">
+                <form class="commend-box">
+                  <textarea class= "commend-article" autocomplete="off" placeholder="댓글 달기..."></textarea>
+                  <button type="button" class="commend-upload">게시</button>
+                </form>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="main-right">
+          <div class="my-profile">
+            <div class="my-profile-img"></div>
+            <div class="my-profile-txt">
+              <div class="my-profile-id">S.O.N.G.M.G</div>
+              <div class="my-profile-name">송민규</div>
+            </div>
+          </div>
+
+          <div class="recommend">
+            <div class="recommend-nav">
+              <div class="recommend-title">회원님을 위한 추천</div>
+              <a href="#" class="recommend-all">모두 보기</a>
+            </div>
+            <div class="recommend-profiles">
+              <div class="rcmd-profile">
+                <div class="rcmd-left">
+                  <div class="rcmd-img"></div>
+                  <div class="rcmd-txt">
+                    <div class="rcmd-id">두리님</div>
+                    <div class="rcmd-know">회원님을 팔로우합니다.</div>
+                  </div>
+                </div>
+                <button type ="button" class="rcmd-follow">팔로우</button>
+              </div>
+              <div class="rcmd-profile">
+                <div class="rcmd-left">
+                  <div class="rcmd-img"></div>
+                  <div class="rcmd-txt">
+                    <div class="rcmd-id">예리님</div>
+                    <div class="rcmd-know">회원님을 팔로우합니다.</div>
+                  </div>
+                </div>
+                <button type ="button" class="rcmd-follow">팔로우</button>
+              </div>
+              <div class="rcmd-profile">
+                <div class="rcmd-left">
+                  <div class="rcmd-img"></div>
+                  <div class="rcmd-txt">
+                    <div class="rcmd-id">은우님</div>
+                    <div class="rcmd-know">회원님을 팔로우합니다.</div>
+                  </div>
+                </div>
+                <button type ="button" class="rcmd-follow">팔로우</button>
+              </div>
+              <div class="rcmd-profile">
+                <div class="rcmd-left">
+                  <div class="rcmd-img"></div>
+                  <div class="rcmd-txt">
+                    <div class="rcmd-id">준식님</div>
+                    <div class="rcmd-know">dooreplay님 외 11명이 팔로우합니다.</div>
+                  </div>
+                </div>
+                <button type ="button" class="rcmd-follow">팔로우</button>
+              </div>
+              <div class="rcmd-profile">
+                <div class="rcmd-left">
+                  <div class="rcmd-img"></div>
+                  <div class="rcmd-txt">
+                    <div class="rcmd-id">승현님</div>
+                    <div class="rcmd-know">dooreplay님 외 11명이 팔로우합니다.</div>
+                  </div>
+                </div>
+                <button type ="button" class="rcmd-follow">팔로우</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <ul class="footer-list">
+              <li>소개</li>
+              <li>도움말</li>
+              <li>홍보 센터</li>
+              <li>API</li>
+              <li>채용 정보</li>
+              <li>개인정보처리방침</li>
+              <li>약관</li>
+              <li>위치</li>
+              <li>인기계정</li>
+              <li>해시태그</li>
+              <li>언어</li>
+            </ul>
+            <div class="copyright">© 2020 INSTAGRAM FROM FACEBOOK</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

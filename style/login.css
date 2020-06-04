@@ -1,0 +1,146 @@
+.login-container{
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-box{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(201, 201, 201, 0.514);
+}
+.login-logo{
+    width: 175px;
+    height: 51px;
+    background-image: url(../img/logo_text.png);
+    background-size: cover;
+    margin:22px 86.5px 20px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+}
+
+     /* 무브 1 */
+.label-move-one{
+    position: relative;
+    width:268px;
+    height: 38px;
+}
+#labelId{
+    position: absolute;
+    font-size: 12px;
+    color:rgb(142, 142, 142);
+    padding: 11px 9px;
+    cursor: text;
+    user-select: none;
+}
+#inputId{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding-left: 9px;
+    color:black;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(201, 201, 201, 0.514);
+    border-radius: 3px;
+    outline: none;
+    letter-spacing: 1px;
+}
+#inputId:focus{
+    border:0.2px solid rgb(172, 172, 172);
+}
+
+
+
+ /*무브 2*/
+.label-move-two{
+    position: relative;
+    width:268px;
+    height: 38px;
+}
+#labelPw{
+    position: absolute;
+    font-size: 12px;
+    color:rgb(142, 142, 142);
+    padding: 11px 9px;
+    cursor: text;
+    user-select: none;
+}
+#inputPw{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 9px;
+    font-size: 14px;
+    color:black;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(201, 201, 201, 0.514);
+    border-radius: 3px;
+    outline: none;
+    letter-spacing: 1px;
+}
+#inputPw:focus{
+    border: 0.2px solid rgb(172, 172, 172);
+}
+
+/* 비밀번호 표시*/
+.pwShow{
+    position: absolute;
+    right: 0;
+}
+#pwShow-btn{
+    font-weight: 500;
+    font-size: 14px;
+    height: 38px;
+    background-color: transparent;
+    border:none;
+    display: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 버튼 */
+#loginBtn{
+    width: 268px;
+    height: 30px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    margin: 8px 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(177, 214, 247);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+/*패스워드 찾기*/
+.passwordFind{
+    text-align: center;
+    position: absolute;
+    bottom :20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.passwordFind > a{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(36, 79, 120);
+}
+.passwordFind > a:visited{
+    color: rgb(36, 79, 120);
+}
+
