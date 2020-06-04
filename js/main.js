@@ -131,7 +131,6 @@ window.onload = () => {
     let dots = document.querySelector('.post-who-more');
     scroll = () => {
         if(location.href="#more-page"){
-            console.log('hiru');
             body.style.overflow = "hidden";
         }
     }
