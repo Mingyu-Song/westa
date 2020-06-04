@@ -42,15 +42,24 @@ window.onload=function(){
         }
     }
     inputTwo.addEventListener('keyup', moveLabelTwo);
-
+    //로그인 버튼 표시
+    let loginBtn = document.getElementById('loginBtn');
     function loginAllow(){
-        let loginBtn = document.getElementById('loginBtn');
         if(inputOne.value.length > 0 && inputTwo.value.length >= 6){
-            loginBtn.style.backgroundColor="#0095F6";
+            loginBtn.style.backgroundColor = "#0095F6";
+            loginBtn.style.cursor = "pointer";
+            return "allow";
         } else {loginBtn.style.backgroundColor="rgb(177, 214, 247)";}
     }
     inputOne.addEventListener('keyup', loginAllow);
     inputTwo.addEventListener('keyup', loginAllow);
+
+    function pass(){
+        if(loginAllow() === "allow"){
+            window.location.href = "main.html";
+        }
+    }
+    loginBtn.addEventListener('click', pass);
 
     //패스워드 보이기 숨기기 
     function passwordShow(){
@@ -64,7 +73,4 @@ window.onload=function(){
         }
     }
     showBtn.addEventListener('click', passwordShow);
-
-
-
 }

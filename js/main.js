@@ -42,21 +42,34 @@ window.onload = () => {
 
     let search = document.getElementById("searching");
     let searchLabel = document.querySelector(".search-label");
+    let searchItem = document.querySelector(".searching-inside");
     searching = () => {
-        if(search.value.length > 0){
+        if(search.value){
             searchLabel.style.display = "none";
-        } else { searchLabel.style.display = "inline"}
+            searchItem.style.left = "30px";
+        
+        } else{
+            searchLabel.style.display = "inline";
+            searchItem.style.left ="48%";
+            search.blur();
+        }
+        
     }
-
+    
     search.addEventListener('keyup',searching);
 
+    searchingTwo = () => {
+        searchItem.style.left = "30px";
+    }
 
+    search.addEventListener('click',searchingTwo);
     //댓글있으면 게시 활성화
     let commend = document.querySelector(".commend-article");
     let commendUpload = document.querySelector(".commend-upload")
     commendColor = () => {
         if(commend.value.length > 0){
             commendUpload.style.color = "#0095F6";
+            commendUpload.style.cursor = "pointer";
         } else {
             commendUpload.style.color = "#B1D6F7";
         }
