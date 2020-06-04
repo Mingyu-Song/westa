@@ -54,12 +54,6 @@ window.onload=function(){
     inputOne.addEventListener('keyup', loginAllow);
     inputTwo.addEventListener('keyup', loginAllow);
 
-    function pass(){
-        if(loginAllow() === "allow"){
-            window.location.href = "../index.html";
-        }
-    }
-    loginBtn.addEventListener('click', pass);
 
     //패스워드 보이기 숨기기 
     function passwordShow(){
